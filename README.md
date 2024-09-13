@@ -1,7 +1,10 @@
 # 易语言-linker
-易语言VC链接器
 
+易语言 VC 链接器
 
-# VC 2022
-如果配置使用VS2022的链接器，link.ini中除了正常配置 linker 之外，还必须在 extra_args 节点下配置下面的内容
-extra_args=/DYNAMICBASE "legacy_stdio_definitions.lib"
+- VC 2022
+
+## 常见问题
+
+1. LINK : fatal error LNK1104: 无法打开文件 "libcimt.lib"  
+解决：link.ini 配置 extra_args=/NODEFAULTLIB:"daouuid.lib" /NODEFAULTLIB:"LIBCIMT.LIB" /DEFAULTLIB:"legacy_stdio_definitions.lib" /NODEFAULTLIB:"libc.lib"
