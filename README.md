@@ -7,4 +7,4 @@
 ## 常见问题
 
 1. LINK : fatal error LNK1104: 无法打开文件 "libcimt.lib"  
-解决：link.ini 配置 extra_args=/NODEFAULTLIB:"daouuid.lib" /NODEFAULTLIB:"LIBCIMT.LIB" /DEFAULTLIB:"legacy_stdio_definitions.lib" /NODEFAULTLIB:"libc.lib"
+   link.ini 配置 extra_args=/NODEFAULTLIB:"daouuid.lib" /NODEFAULTLIB:"LIBCIMT.LIB" /DEFAULTLIB:"legacy_stdio_definitions.lib" /NODEFAULTLIB:"libc.lib"
